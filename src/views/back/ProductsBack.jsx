@@ -83,6 +83,7 @@ function ProductsBack() {
             });
             console.log("取得資料:", res.data);
             setProducts(res.data.products);
+            setPagination(res.data.pagination);
 
         } catch (error) {
             console.error("取得資料時發生錯誤:", error.response
@@ -94,7 +95,7 @@ function ProductsBack() {
     const goPage = async (pageLocation) => {
 
         try {
-            const res = await axios.get(`${apiPath}hahablackpink/admin/products?page=${pageLocation}`, {
+            const res = await axios.get(`${apiBase}v2/api/${apiPath}/admin/products?page=${pageLocation}`, {
                 headers: {
                     Authorization: BPtoken
                 }

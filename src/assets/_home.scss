@@ -1,0 +1,18 @@
+.background_home {
+    width: 100%;
+    height: 100vh; // 讓背景佔滿整個視窗高度
+    background-image: url('./bpfront.jpg');
+    background-position: center; // 圖片置中
+    background-size: cover; // 關鍵！圖片縮放以填滿容器
+    background-repeat: no-repeat;
+}
+
+.logo_home {
+    max-width: 200px;
+
+}
+
+.header_bg {
+    background-color: black;
+
+}
